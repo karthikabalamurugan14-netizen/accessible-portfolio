@@ -1,63 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Accessible personal portfolio website built using semantic HTML5.">
-    <meta name="keywords" content="portfolio, HTML5, accessibility, WCAG, semantic website">
-    <meta name="author" content="Karthika">
+<meta name="description" content="Responsive Portfolio Website">
+<meta name="author" content="Karthika">
 
-    <title>Karthika Portfolio</title>
+<title>Karthika Portfolio</title>
 
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<a class="skip-link" href="#main-content">Skip to main content</a>
-
 <header>
-    <h1>Karthika Portfolio</h1>
+    <nav>
+        <h1>Karthika Portfolio</h1>
 
-    <nav aria-label="Main Navigation">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 </header>
 
-<main id="main-content">
+<section class="hero">
+    <h2>Welcome to My Portfolio</h2>
+    <p>B.Sc Computer Science Student | Web Development Learner</p>
+</section>
 
-    <section aria-labelledby="welcome-heading">
-        <h2 id="welcome-heading">Welcome</h2>
-        <p>
-            This is my accessible portfolio website created using semantic HTML5 and WCAG accessibility guidelines.
-        </p>
-    </section>
+<section id="skills">
+    <h2 class="section-title">My Skills</h2>
 
-    <section aria-labelledby="skills-heading">
-        <h2 id="skills-heading">Skills</h2>
+    <div class="container">
 
-        <article>
+        <article class="card">
             <h3>Frontend Development</h3>
             <p>HTML5, CSS3, JavaScript</p>
         </article>
 
-        <article>
+        <article class="card">
             <h3>Accessibility</h3>
-            <p>Semantic HTML, ARIA labels, keyboard navigation</p>
+            <p>Semantic HTML, ARIA Labels, Keyboard Navigation</p>
         </article>
 
-    </section>
+        <article class="card">
+            <h3>Responsive Design</h3>
+            <p>CSS Grid, Flexbox, Media Queries</p>
+        </article>
 
-</main>
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="container">
+
+        <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>Responsive personal portfolio using HTML5 and CSS3.</p>
+        </div>
+
+        <div class="card">
+            <h3>Accessibility Project</h3>
+            <p>WCAG compliant website with semantic structure.</p>
+        </div>
+
+        <div class="card">
+            <h3>Future Projects</h3>
+            <p>More web development projects coming soon.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <p>Email: karthika@example.com</p>
+</section>
 
 <footer>
-    <p>&copy; 2026 Karthika</p>
+    <p>&copy; 2026 Karthika Portfolio</p>
 </footer>
 
 </body>
